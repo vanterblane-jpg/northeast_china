@@ -1,0 +1,147 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+/* 全局基础样式 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: sans-serif;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* 整体容器 */
+#mainwrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 头部导航 */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ddd;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+}
+#logo a {
+  font-size: 18px;
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 15px;
+}
+
+/* 内容区布局（和你当前格式完全一致） */
+#content {
+  display: flex;
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* 主内容区 */
+#mainContent {
+  flex: 3;
+}
+#bannerImage img {
+  max-width: 100%;
+  display: block;
+  margin: 15px 0;
+}
+
+/* 侧边栏（地图+文字对齐、图片不溢出） */
+#sidebar {
+  flex: 1;
+  margin-top: 30px; /* 和主标题对齐 */
+}
+#sidebar img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+#sidebar ul {
+  list-style: none;
+}
+#sidebar ul li {
+  margin: 6px 0;
+}
+
+/* 隐藏移动端搜索框 */
+.notOnDesktop {
+  display: none;
+}
+</style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BlogPost template by Adobe Dreamweaver</title>
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.--><script>var __adobewebfontsappname__="dreamweaver"</script><script src="http://use.edgefonts.net/montserrat:n4:default;source-sans-pro:n2:default.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div id="mainwrapper">
+<header> 
+    <!--**************************************************************************
+    Header starts here. It contains Logo and 3 navigation links. 
+    ****************************************************************************-->
+    <div id="logo">
+    <!-- 给Logo加链接，同时用style去掉下划线和蓝色 -->
+    <a href="northeast_china_title.html" 
+       title="返回首页"
+       style="color: inherit; text-decoration: none;">
+      中国东北
+    </a>
+	  </div>
+    <nav> <a href="northeast_china_qihou.html">气候</a> 
+		<a href="northeast_china_meishi.html" >美食</a>
+		<a href="northeast_china_xianzhaung.html">现状</a> </nav>
+  </header>
+  <div id="content">
+    <div class="notOnDesktop"> 
+      <!-- This search box is displayed only in mobile and tablet laouts and not in desktop layouts -->
+      <input type="text" placeholder="Search">
+    </div>
+    <section id="mainContent"> 
+      <!--************************************************************************
+    Main Blog content starts here
+    ****************************************************************************-->
+      <h1>
+        <!-- Blog title -->
+      气候</h1>
+      <h3>
+        <!-- Tagline -->
+        最北边的温暖</h3>
+      <div id="bannerImage"><img src="northeast1.png" alt="东北冬季气候图片"/></div>
+      <p> 东北地区的气候属于温带季风气候，冬季漫长寒冷且常伴有风雪，夏季短暂温暖多雨，春秋两季气温变化剧烈；其中最显著的特征是从十月到次年四月长达半年的寒冬，一月平均气温低至零下二十至十度，而夏季仅有六月到八月温暖湿润，七月平均气温约二十至二十四度；降水分布不均，由东南向西北递减，夏季降雨集中且常为暴雨形式，同时从黑龙江到辽宁，气候差异明显——黑龙江最冷，辽宁相对温和，而长白山地区因雪量大成为世界级滑雪胜地。 </p>
+      <aside id="authorInfo"> 
+      </aside>
+    </section>
+    <section id="sidebar"> 
+      <!--************************************************************************
+    Sidebar starts here. It contains a searchbox, sample ad image and 6 links
+    ****************************************************************************-->
+      <div id="adimage"><img src="northeast2.png" alt="中国东北地区地图"/></div>
+      <nav>
+        <ul>
+		  <li><a href="northeast_china_title.html">首页</a></li>
+          <li><a href="northeast_china_qihou.html">气候</a></li>
+          <li><a href="northeast_china_meishi.html">美食</a></li>
+          <li><a href="northeast_china_xianzhaung.html">现状</a></li>
+        </ul>
+      </nav>
+</section>
+    <footer> 
+      <!--************************************************************************
+    Footer starts here
+    ****************************************************************************-->
+  </div>
+</div>
+</body>
+</html>
